@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath,amssymb}
+\title{Mathematical Typesetting}
+\author{Technical Writing Practical}
+\date{}
+\begin{document}
+\maketitle
+\section{Basics}
+Einstein's mass--energy equation is \(E=mc^2\).
+\[
+v=u+at
+\]
+\section{Fractions and Roots}
+\[
+x_i=\frac{\sqrt{a^2+b^2}}{c_i}
+\]
+\section{Symbols and Math Fonts}
+\[
+G_{\mu\nu}+\Lambda g_{\mu\nu}=\kappa T_{\mu\nu},
+\quad \forall x\in\mathbb R\ \exists\epsilon>0\Rightarrow |x|<\epsilon
+\]
+\[
+F(\theta)=\sum_{k=0}^{n}\binom nk\theta^k(1-\theta)^{n-k}
+\]
+\section{Calculus}
+\[
+\frac{du}{dx}+\frac{\partial u}{\partial t}
+=\alpha\frac{\partial^2u}{\partial x^2}
+\qquad
+\int_0^1(3x^2+2x+1)\,dx
+\]
+\section{Multi-line Equations}
+\begin{align}
+x&=5 & x+y&=3\\
+x&=5 & x+y&=3
+\end{align}
+\begin{multline*}
+(x+y+z)^3=(x+y+z)(x+y+z)(x+y+z)\\
+=x^3+y^3+z^3+3x^2y+3xy^2+3y^2z+3yz^2\\
++3x^2z+3xz^2+6xyz
+\end{multline*}
+\section{Matrices}
+\[
+\begin{bmatrix}1&2\\3&4\end{bmatrix}\quad
+\begin{pmatrix}1&2\\3&4\end{pmatrix}\quad
+\begin{vmatrix}1&2\\3&4\end{vmatrix}\quad
+\begin{Vmatrix}1&2\\3&4\end{Vmatrix}
+\]
+\end{document}

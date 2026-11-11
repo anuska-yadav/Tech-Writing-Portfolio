@@ -1,0 +1,135 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath,amssymb,array,multirow,booktabs,tabularx}
+\usepackage[table]{xcolor}
+\title{Mathematical Structures and Tables}
+\author{Technical Writing Practical}
+\date{}
+\begin{document}
+\maketitle
+\section*{Grouped Expression}
+\[
+\overbrace{a+b+c}^{\text{First Group}}+
+\overbrace{x+y+z}^{\text{Second Group}}
+=\overbrace{a+\underbrace{b+c}_{\text{Sum 1}}}^{\text{Total}}
+\]
+\section*{Array}
+\[
+A=\left[\begin{array}{c|ccc}
+&x_1&x_2&x_3\\\hline
+y_1&a_{11}&a_{12}&a_{13}\\
+y_2&a_{21}&a_{22}&a_{23}\\
+y_3&a_{31}&a_{32}&a_{33}
+\end{array}\right]
+\]
+\section*{Piecewise Function}
+\[
+f(x)=\begin{cases}
+x^2+2x+1,&x<0,\\
+\sqrt{x+1},&0\leq x<4,\\
+x-1,&x\geq4.
+\end{cases}
+\]
+\section*{Matrix with Column Groups}
+\[
+\begin{bmatrix}
+\overbrace{a_{11}\ a_{12}\ a_{13}}^{\text{Column Group 1}}&
+\overbrace{a_{14}\ a_{15}}^{\text{Column Group 2}}\\
+a_{21}\ a_{22}\ a_{23}&a_{24}\ a_{25}\\
+a_{31}\ a_{32}\ a_{33}&a_{34}\ a_{35}
+\end{bmatrix}
+\]
+\section*{Quadratic and Matrix Contributions}
+\[
+F(x)=\underbrace{\sum_{i=1}^{n}(a_ix_i^2+b_ix_i+c_i)}_{\text{Quadratic Contribution}}
++\underbrace{\begin{bmatrix}x_1&\cdots&x_n\end{bmatrix}
+A\begin{bmatrix}x_1\\\vdots\\x_n\end{bmatrix}}_{\text{Matrix Contribution}}
+\]
+\[
+A=\begin{bmatrix}a_{11}&a_{12}&\cdots&a_{1n}\\
+a_{21}&a_{22}&\cdots&a_{2n}\\
+\vdots&\vdots&\ddots&\vdots\\a_{n1}&a_{n2}&\cdots&a_{nn}\end{bmatrix}
+\]
+\section*{Student Table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}\hline
+\textbf{Roll No.}&\textbf{Name}&\textbf{Department}&\textbf{Semester}&\textbf{CGPA}\\\hline
+101&Amit&CSE&2&8.45\\\hline 102&Neha&CSE&2&9.12\\\hline
+103&Rahul&ECE&4&8.76\\\hline 104&Priya&ECE&4&9.01\\\hline
+\end{tabular}
+\end{center}
+\section*{Multicolumn and Multirow Tables}
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+\multicolumn{3}{|c|}{\textbf{Academic Performance}}\\\hline
+Student&Midterm&Final\\\hline A&78&89\\\hline B&85&92\\\hline C&91&94\\\hline
+\end{tabular}
+
+\medskip
+\begin{tabular}{|c|l|c|c|}\hline
+\textbf{Department}&\textbf{Course}&\textbf{Credits}&\textbf{Grade}\\\hline
+\multirow{3}{*}{CSE}&Data Structures&4&A\\&Machine Learning&4&A+\\&Operating Systems&3&B+\\\hline
+\multirow{2}{*}{ECE}&Digital Electronics&4&A\\&Signals&3&B+\\\hline
+\end{tabular}
+\end{center}
+\section*{Scientific Table}
+\rowcolors{2}{gray!15}{white}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}\hline
+\rowcolor{gray!35}\textbf{Model}&\textbf{Parameters}&\textbf{FLOPs}&\textbf{Accuracy}&\textbf{Energy (kWh)}\\\hline
+ResNet18&11.7M&1.8G&94.2\%&0.00093\\
+MobileNetV2&3.5M&0.3G&92.8\%&0.00061\\
+EfficientNet-B0&5.3M&0.39G&93.5\%&0.00072\\\hline
+\end{tabular}
+\end{center}
+\section*{Student Performance with Conditional Colours}
+\newcommand{\markcell}[1]{\ifnum#1>89\cellcolor{green!25}\else\ifnum#1>74\cellcolor{yellow!35}\else\cellcolor{red!25}\fi\fi #1}
+\begin{center}
+\begin{tabular}{|l|c|c|c|}\hline
+\textbf{Student}&\textbf{Mathematics}&\textbf{Physics}&\textbf{Computer Science}\\\hline
+Amit&\markcell{92}&\markcell{81}&\markcell{95}\\\hline
+Neha&\markcell{72}&\markcell{88}&\markcell{91}\\\hline
+Rahul&\markcell{68}&\markcell{74}&\markcell{79}\\\hline
+Priya&\markcell{96}&\markcell{94}&\markcell{98}\\\hline
+\end{tabular}
+\end{center}
+\section*{Paragraphs in Cells}
+\small
+\begin{tabularx}{\textwidth}{|p{2cm}|X|X|X|}\hline
+\textbf{Technique}&\textbf{Description}&\textbf{Advantages}&\textbf{Limitations}\\\hline
+Pruning&Removes unnecessary parameters from a neural network.&Reduces model size and computation.&May reduce accuracy.\\\hline
+Quantization&Represents weights using lower precision.&Reduces memory and energy consumption.&Can introduce numerical error.\\\hline
+Knowledge Distillation&Transfers knowledge from a large teacher model to a smaller student model.&Produces compact models.&Requires training a teacher model.\\\hline
+\end{tabularx}
+\normalsize
+\section*{Professional Table}
+\begin{table}[h]\centering
+\caption{Comparison of model performance}\label{tab:models}
+\begin{tabular}{lcccc}\toprule
+\textbf{Model}&\textbf{Parameters}&\textbf{FLOPs}&\textbf{Accuracy}&\textbf{Energy}\\\midrule
+ResNet18&11.7M&1.82G&94.21&0.00093\\
+MobileNetV2&3.5M&0.30G&92.84&0.00061\\
+EfficientNet-B0&5.3M&0.39G&93.52&0.00072\\\bottomrule
+\end{tabular}
+\end{table}
+\section*{Nested Table}
+\begin{center}
+\begin{tabular}{|l|l|p{4.6cm}|}\hline
+\textbf{Model}&\textbf{Architecture}&\textbf{Performance}\\\hline
+CNN&Conv $\to$ ReLU $\to$ Pool&\begin{tabular}{@{}lc@{}}Metric&Value\\Accuracy&94\%\\F1 Score&93\%\end{tabular}\\\hline
+ResNet&Conv $\to$ BN $\to$ ReLU&\begin{tabular}{@{}lc@{}}Metric&Value\\Accuracy&96\%\\F1 Score&95\%\end{tabular}\\\hline
+ViT&Attention $\to$ MLP&\begin{tabular}{@{}lc@{}}Metric&Value\\Accuracy&97\%\\F1 Score&96\%\end{tabular}\\\hline
+\end{tabular}
+\end{center}
+\section*{Mathematical Expressions in a Table}
+\small
+\begin{center}
+\begin{tabular}{|l|c|c|c|}\hline
+\textbf{Model}&\textbf{Loss Function}&\textbf{Parameters}&\textbf{Complexity}\\\hline
+Linear&$\frac1n\sum_{i=1}^n(y_i-\hat y_i)^2$&10K&$O(n)$\\\hline
+CNN&$-\sum_i y_i\log(\hat y_i)$&1.2M&$O(n^2)$\\\hline
+Transformer&$-\sum_i y_i\log p_i$&110M&$O(n^2d)$\\\hline
+\end{tabular}
+\end{center}
+\normalsize
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{fontspec,amsmath,makeidx,xcolor}
+\makeindex
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+\title{Document Structure}
+\author{Technical Writing Practical}
+\date{}
+\begin{document}
+\maketitle
+\section{Fonts and Background}\index{background}
+\begin{trivlist}
+\item This text is written in DejaVu Serif, the main font.
+\item {\sffamily This text is written in DejaVu Sans, the sans-serif font.}
+\item {\ttfamily This text is written in Courier-style monospace font.}
+\end{trivlist}
+\section{Spacing}
+This is the first line of a paragraph.\\
+This is another line, but not another paragraph.
+\vspace{1cm}
+This paragraph starts 1cm below.
+\medskip
+\noindent\textgreater\ This is another paragraph. Incomprehensibilities and antidisestablishmentarianisms are two long words.
+\medskip
+\noindent\textgreater\ This is another paragraph. Incomprehensibilities \mbox{and antidisestablishmentarianisms} are two long words.
+\newpage
+\section{Reserved Space for Section C}
+This page break leaves the requested space for section C.
+\section{Numbering}\index{numbering}
+\renewcommand{\thesection}{\Alph{section}}
+\begin{equation}x^2+y^2=1\label{eq:circle}\end{equation}
+Equation~\ref{eq:circle} denotes a circle.
+\begin{equation}\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\label{eq:ellipse}\end{equation}
+\section{Boxes and Lines}\index{savebox}
+\newsavebox{\messagebox}
+\sbox{\messagebox}{This message is written in a savebox.}
+\usebox{\messagebox}\par\medskip
+\usebox{\messagebox}\par\medskip
+\usebox{\messagebox}\par\medskip
+\fbox{\parbox{5cm}{This message is wrapped in a 5cm paragraph box.}}
+\medskip
+Note that these boxes are used for highlighting and layout design.
+\printindex
+\begin{thebibliography}{9}
+\bibitem{oetiker} T. Oetiker, \textit{The Not So Short Introduction to \LaTeX2e}, CTAN, 2021.
+\bibitem{overleaf} Overleaf, \textit{Bibliography management with BibTeX}, Overleaf.
+\end{thebibliography}
+\end{document}

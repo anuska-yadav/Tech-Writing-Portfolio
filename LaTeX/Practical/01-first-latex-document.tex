@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath}
+\title{My First \LaTeX{} Document}
+\author{Technical Writing Practical}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Introduction}
+This document demonstrates the basic structure of a \LaTeX{} document.
+Special characters such as \%, \&, \$, \# and \_ have special meanings.
+\subsection{A Numbered List}
+\begin{enumerate}
+\item First item
+\item Second item
+\item Third item
+\end{enumerate}
+\section{Science!}
+Einstein's famous mass--energy relation is \(E=mc^2\).
+\section{The Schrödinger Equation}
+\begin{equation}
+i\hbar\frac{\partial\Psi(\mathbf r,t)}{\partial t}
+=\left[-\frac{\hbar^2}{2\mu}\nabla^2+V(\mathbf r,t)\right]\Psi(\mathbf r,t).
+\label{eq:schrodinger}
+\end{equation}
+See Equation~\ref{eq:schrodinger}.
+\end{document}

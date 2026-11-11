@@ -1,0 +1,33 @@
+# Doxygen configuration for the Logger and CalculationEngine practical.
+PROJECT_NAME           = "Logger and Calculation Engine"
+PROJECT_NUMBER         = 1.0
+PROJECT_BRIEF          = "Doxygen documentation practical"
+OUTPUT_DIRECTORY       = generated
+
+INPUT                  = main.cpp Logger.h CalculationEngine.h
+FILE_PATTERNS          = *.cpp *.h
+RECURSIVE              = NO
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_TIMESTAMP         = YES
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+SEARCHENGINE            = YES
+
+GENERATE_LATEX         = NO
+LATEX_OUTPUT           = latex
+USE_PDFLATEX           = YES
+
+GENERATE_XML            = NO
+XML_OUTPUT              = xml
+
+WARNINGS                = YES
+WARN_IF_UNDOCUMENTED    = YES
+WARN_IF_DOC_ERROR       = YES
+QUIET                   = NO
