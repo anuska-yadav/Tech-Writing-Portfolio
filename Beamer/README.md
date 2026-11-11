@@ -1,31 +1,53 @@
+# Beamer — Technical Writing
 
-cd ~/Desktop/technical-writing-portfolio
+## Introduction
 
-cat > Beamer/README.md <<'EOF'
-# Beamer – Presentation Preparation with LaTeX
+Beamer is a LaTeX document class used to create presentations.
 
-This section documents the Beamer concepts covered in our Technical Writing lectures and practical work.
+## Basic Structure
+
+A Beamer presentation uses frames to organise its content into individual slides.
+
+```latex
+\documentclass{beamer}
+
+\usetheme{Madrid}
+
+\title{Technical Writing}
+\author{Anuska Yadav}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+    \frametitle{Introduction}
+    This is my first Beamer slide.
+\end{frame}
+
+\end{document}
+```
 
 ## Topics Covered
 
-1. Introduction to the Beamer document class
-2. Basic structure of a Beamer presentation
-3. Title slide and presentation frames
-4. Adding content and bullet points to slides
-5. Creating an abstract slide
+- Beamer document class
+- Presentation title and author
+- Themes
+- Frames and slide titles
+- Bullet points
 
-## Practical Application
+## Practical Work
 
-The presentation practical involved creating a short presentation with:
-- A title slide
-- One or two content slides
-- A conclusion slide
+The `Practical/` folder contains:
 
-## Learning Outcome
+- `01-basic-beamer-presentation.tex` — LaTeX source code.
+- `01-basic-beamer-presentation.pdf` — Compiled presentation.
 
-Understanding how to create a basic slide presentation using LaTeX Beamer.
-EOF
+## Author
 
-## Source and Acknowledgement
+Anuska Yadav
 
-This documentation is based on the Beamer lecture material and presentation assignment shared by **Dr. Neeta Nain, MNIT Jaipur**.
+Technical Writing Coursework — MNIT Jaipur
+
+Instructor: Dr. Neeta Nain
