@@ -1,7 +1,8 @@
+
 \documentclass[11pt,a4paper]{article}
 
 \usepackage[margin=2cm]{geometry}
-\usepackage{amsmath,graphicx,xcolor,caption}
+\usepackage{amsmath,graphicx,xcolor,caption,float}
 
 \title{Lists, Colours and Figures}
 \author{Technical Writing Practical}
@@ -44,7 +45,7 @@ You would most likely use \LaTeX{} in the following scenarios:
 
 \section{Tables and Colours}
 
-\begin{table}[!t]
+\begin{table}[H]
 \centering
 \caption{Example table with column widths}
 
@@ -56,8 +57,9 @@ First entry & Second entry & Third entry\\
 \hline
 \multicolumn{3}{|c|}{Combined row across all columns}\\
 \hline
+Width: 3 cm & Width: 4 cm & Width: 3 cm\\
+\hline
 \end{tabular}
-
 \end{table}
 
 \[
@@ -71,11 +73,11 @@ First entry & Second entry & Third entry\\
 The course image files can be placed beside this source as
 \texttt{mnit-logo.png} and \texttt{mnit-building.jpg}.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \IfFileExists{mnit-logo.png}
 {
-   \includegraphics[origin=c,width=0.25\textwidth]{mnit-logo.png}
+    \includegraphics[width=0.25\textwidth]{mnit-logo.png}
 }
 {
     \fbox{\parbox[c][2cm][c]{0.25\textwidth}
@@ -84,15 +86,20 @@ The course image files can be placed beside this source as
 \caption{MNIT logo}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \IfFileExists{mnit-building.jpg}
 {
-    \includegraphics[width=\textwidth,
-    trim=0 2cm 0 2cm,clip]{mnit-building.jpg}
+    \includegraphics[
+        width=0.8\textwidth,
+        height=0.4\textheight,
+        keepaspectratio,
+        trim=0 2cm 0 2cm,
+        clip
+    ]{mnit-building.jpg}
 }
 {
-    \fbox{\parbox[c][3cm][c]{0.9\textwidth}
+    \fbox{\parbox[c][3cm][c]{0.8\textwidth}
     {\centering Add mnit-building.jpg}}
 }
 \caption{This is a floating image and can appear anywhere.}
@@ -100,14 +107,18 @@ The course image files can be placed beside this source as
 
 \section{Multiple Images Using Minipages}
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 
 \begin{minipage}{0.45\textwidth}
 \centering
 \IfFileExists{image1.jpg}
 {
-    \includegraphics[width=0.9\linewidth]{image1.jpg}
+    \includegraphics[
+        width=0.9\linewidth,
+        height=0.3\textheight,
+        keepaspectratio
+    ]{image1.jpg}
 }
 {
     \fbox{\parbox[c][2cm][c]{0.9\linewidth}
@@ -120,7 +131,11 @@ The course image files can be placed beside this source as
 \centering
 \IfFileExists{image2.jpg}
 {
-    \includegraphics[width=0.9\linewidth]{image2.jpg}
+    \includegraphics[
+        width=0.9\linewidth,
+        height=0.3\textheight,
+        keepaspectratio
+    ]{image2.jpg}
 }
 {
     \fbox{\parbox[c][2cm][c]{0.9\linewidth}

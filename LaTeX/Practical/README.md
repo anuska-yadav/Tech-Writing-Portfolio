@@ -12,4 +12,6 @@ For every practical, the `.tex` source and its matching `.pdf` output have the s
 
 `physics.bib` is the bibliography database used with the first document's citation exercise.
 
-Compile ordinary files with `pdflatex`. Compile `05-document-structure-and-index.tex` with `xelatex` because it uses `fontspec`. The figure practical has placeholders until the original course MNIT logo and building image are added.
+
+The figure practical uses the image files included in this directory: `mnit-logo.png`, `mnit-building.jpg`, `image1.jpg`, and `image2.jpg`. The two additional campus images are illustrative images used for the minipage examples.
+
