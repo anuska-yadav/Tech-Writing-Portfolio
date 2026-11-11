@@ -23,6 +23,10 @@ After studying this section, I should be able to:
 | 01 | [Introduction and Basics](01-introduction-and-basics.md) | LaTeX fundamentals, document structure, classes and compilation |
 | 02 | [Commands, Formatting and Environments](02-commands-formatting-and-environments.md) | Text formatting, spacing, lists, tables, figures and references |
 | 03 | [Document Layout and Page Styles](03-document-layout-and-page-styles.md) | Page dimensions, margins, document classes, headers and footers |
+
+| 04 | Advanced Document Styling | Advanced formatting and styling techniques |
+| 05 | Paragraphs, Page Breaks and Numbering | Paragraph formatting, page breaks and numbering |
+| 06 | Spacing, Boxes and Layout | Spacing commands, boxes and layout techniques |
 | 07 | [Custom Environments, Errors and BibTeX](07-custom-environments-errors-and-bibtex.md) | Custom environments, warnings, indexing and BibTeX concepts |
 | 08 | [Mathematical Typesetting](08-mathematical-typesetting.md) | Equations, symbols, matrices, calculus and mathematical environments |
 | 09 | [Colours, Figures and Picture Environment](09-colors-figures-and-picture-environment.md) | Colours, imported images, figures and drawing with picture commands |
