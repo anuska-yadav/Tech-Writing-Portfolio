@@ -10,5 +10,3 @@ Contains diagrams, illustrations, and other images used in practical work and do
 ### Screenshots
 Contains screenshots showing practical execution, software outputs, and completed work.
 
-## Note
-Only relevant course-related images and genuine practical screenshots are included.

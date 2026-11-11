@@ -1,8 +1,8 @@
 # Practical 02 — Git Branching and Stash
 
-Use a separate practice repository, not your portfolio repository. This guide covers the branching assignment topics recorded for the course.
+This practical covers Git branching, switching between branches, merging, resolving merge conflicts, deleting merged branches and temporarily saving uncommitted changes using Git stash.
 
-## 1. Inspect and rename a branch
+## 1. Inspect and Rename a Branch
 
 ```bash
 git branch
@@ -10,16 +10,20 @@ git branch -m main
 git branch
 ```
 
-If the branch is already named `main`, you do not need to rename it.
+If the branch is already named `main`, renaming is not required.
 
-## 2. Create and switch to a branch
+The `git branch` command displays the available local branches. The `-m` option renames the current branch.
+
+## 2. Create and Switch to a Branch
 
 ```bash
 git switch -c feature
 git branch
 ```
 
-Create or edit a file, then commit the change:
+The `git switch -c` command creates a new branch named `feature` and switches to it.
+
+Create a file and commit the changes:
 
 ```bash
 echo "Work on feature branch" > feature.txt
@@ -27,27 +31,42 @@ git add feature.txt
 git commit -m "Add feature branch file"
 ```
 
-## 3. Switch branches and make a separate change
+## 3. Switch Branches and Make a Separate Change
+
+Switch back to the `main` branch:
 
 ```bash
 git switch main
+```
+
+Create another file and commit the changes:
+
+```bash
 echo "Work on main branch" > main-notes.txt
 git add main-notes.txt
 git commit -m "Add main branch notes"
 ```
 
-## 4. Merge the feature branch
+This demonstrates how different branches can contain separate changes.
+
+## 4. Merge the Feature Branch
+
+While on the `main` branch, execute:
 
 ```bash
 git merge feature
 git log --oneline --all --graph
 ```
 
-Run the merge while on `main`. The feature branch's changes are merged into the current branch.
+The `git merge` command combines the changes from the specified branch into the current branch.
 
-## 5. Practise a merge conflict
+The `git log --oneline --all --graph` command displays the commit history of all branches in a graphical format.
 
-Create a file on `main` and commit it:
+## 5. Practise a Merge Conflict
+
+A merge conflict occurs when Git cannot automatically combine changes made to the same part of a file.
+
+**Step 1: Create a file on the main branch and commit it.**
 
 ```bash
 echo "Original shared line" > shared.txt
@@ -55,7 +74,7 @@ git add shared.txt
 git commit -m "Add shared file"
 ```
 
-Create a branch and change the same line:
+**Step 2: Create a new branch and modify the same line.**
 
 ```bash
 git switch -c conflict-demo
@@ -64,7 +83,7 @@ git add shared.txt
 git commit -m "Change shared line on conflict branch"
 ```
 
-Return to `main` and change that same line differently:
+**Step 3: Return to the main branch and modify the same line differently.**
 
 ```bash
 git switch main
@@ -73,13 +92,25 @@ git add shared.txt
 git commit -m "Change shared line on main"
 ```
 
-Now merge:
+**Step 4: Merge the conflict-demo branch.**
 
 ```bash
 git merge conflict-demo
 ```
 
-Git should report a conflict because both branches changed the same line. Open `shared.txt`, choose the final content, and remove the conflict marker lines (`<<<<<<<`, `=======`, and `>>>>>>>`). Then:
+Git should report a merge conflict because both branches modified the same line differently.
+
+**Step 5: Resolve the conflict.**
+
+Open `shared.txt` in a text editor. Choose the desired final content and remove the conflict marker lines:
+
+```text
+<<<<<<< HEAD
+=======
+>>>>>>> conflict-demo
+```
+
+Save the resolved file and execute:
 
 ```bash
 git add shared.txt
@@ -87,46 +118,72 @@ git commit
 git status
 ```
 
-## 6. Delete a merged branch
+The merge conflict is resolved and the merge is recorded in the commit history.
+
+## 6. Delete a Merged Branch
 
 ```bash
 git branch
 git branch -d conflict-demo
 ```
 
-The `-d` option safely deletes a branch that has been merged.
+The `git branch -d` command safely deletes a branch that has been merged.
 
-## 7. Practise stash
+## 7. Practise Git Stash
 
-Make an uncommitted edit:
+Make an uncommitted modification to `shared.txt`:
 
 ```bash
 echo "Temporary unfinished work" >> shared.txt
 git status
+```
+
+Temporarily save the changes:
+
+```bash
 git stash
 git status
 git stash list
+```
+
+Reapply the saved changes:
+
+```bash
 git stash apply
 git status
 ```
 
-`git stash` temporarily stores uncommitted changes. `git stash apply` reapplies the stored changes.
+- `git stash` temporarily saves uncommitted changes and restores the working directory to a clean state.
+- `git stash list` displays the saved stash entries.
+- `git stash apply` reapplies the saved changes without removing the stash entry.
 
-## 8. Read command help and inspect the graph
+## 8. Read Command Help and Inspect the Commit Graph
+
+View the help documentation for Git stash:
 
 ```bash
 git help stash
+```
+
+Display the commit history of all branches:
+
+```bash
 git log --oneline --all --graph
 ```
 
-## Completion checklist
+The graph provides a visual representation of branch creation, commits and merges.
 
-- [ ] Inspect and rename a branch
-- [ ] Create and switch to a branch
-- [ ] Commit changes on separate branches
-- [ ] Merge a branch
-- [ ] Create and resolve a merge conflict
-- [ ] Delete a merged branch
-- [ ] Save and reapply work with stash
-- [ ] Open help for stash
-- [ ] Display the commit graph
+## Evidence to Keep
+
+Capture terminal screenshots showing the execution and output of important Git commands, particularly:
+
+- Creating and switching branches.
+- Merging the feature branch.
+- Identifying and resolving a merge conflict.
+- Deleting a merged branch.
+- Saving and reapplying changes using Git stash.
+- Displaying the commit graph.
+
+---
+
+*Git Branching and Stash | Practical 02 | Technical Writing | MNIT Jaipur*

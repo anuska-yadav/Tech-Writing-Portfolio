@@ -1,12 +1,8 @@
 # Practical 01 — Git Basics
 
-**Based on Assignment 8: Git Basics (12 tasks).**
+This practical covers fundamental Git commands and operations, including repository initialization, configuration, staging, committing, inspecting changes, restoring files, managing commit history and navigating between commits.
 
-## Important: use a separate practice repository
-
-Do not run these exercises inside your `Tech-Writing-Portfolio` repository. This practical creates a separate folder on your Desktop so that commands such as `git rm` and `git checkout` cannot affect your portfolio.
-
-## Task 1 — Initialize a repository
+## Task 1 — Initialize a Repository
 
 ```bash
 cd ~/Desktop
@@ -15,7 +11,9 @@ cd Git-Basics-Practice
 git init
 ```
 
-## Task 2 — Configure Git username and email
+This initializes a new Git repository named `Git-Basics-Practice`.
+
+## Task 2 — Configure Git Username and Email
 
 Replace the example values with your own details:
 
@@ -26,11 +24,13 @@ git config user.name
 git config user.email
 ```
 
-These settings apply only to this practice repository.
+These commands configure and display the Git username and email for the current repository.
 
-## Task 3 — Create and stage `readme.txt`
+## Task 3 — Create and Stage `readme.txt`
 
-Create a file named `readme.txt` and paste the contents from the sample file supplied with this practical. You can create it in VS Code, or use:
+Create a file named `readme.txt` and paste the contents from the sample file supplied with this practical.
+
+Alternatively, use:
 
 ```bash
 echo "Git Basics Practical" > readme.txt
@@ -39,28 +39,30 @@ git add readme.txt
 git status
 ```
 
-**What to observe:** Git reports the file under “Changes to be committed”. It is staged but not committed yet.
+**Observation:** Git reports the file under `Changes to be committed`. This means the file has been staged but not committed yet.
 
-## Task 4 — Commit the file
+## Task 4 — Commit the File
 
 ```bash
 git commit -m "Adding first file"
 git status
 ```
 
-**What to observe:** The working tree should be clean because the staged change has been committed.
+**Observation:** The working tree should be clean because the staged changes have been committed.
 
-## Task 5 — Modify the file and inspect the difference
+## Task 5 — Modify the File and Inspect the Difference
 
-Add one more line to `readme.txt` using your editor, save it, and run:
+Add one more line to `readme.txt` using a text editor and save the file.
+
+Run:
 
 ```bash
 git diff
 ```
 
-**What to observe:** The added line is shown with a `+` sign. `git diff` displays unstaged changes.
+**Observation:** The added line is displayed with a `+` sign. The `git diff` command displays changes that have not yet been staged.
 
-## Task 6 — Discard unstaged changes
+## Task 6 — Discard Unstaged Changes
 
 ```bash
 git restore readme.txt
@@ -68,11 +70,11 @@ cat readme.txt
 git status
 ```
 
-The uncommitted modification is discarded and the file returns to its last committed content.
+The uncommitted modification is discarded, and the file returns to its last committed content.
 
-### Also practise removing a file from the staging area
+### Remove a File from the Staging Area
 
-Make another edit to `readme.txt`, then:
+Make another edit to `readme.txt`, then execute:
 
 ```bash
 git add readme.txt
@@ -83,11 +85,13 @@ git restore readme.txt
 cat readme.txt
 ```
 
-`git restore --staged` unstages the change; it does not discard the edited content. The second `git restore` discards the remaining unstaged edit.
+`git restore --staged` removes the changes from the staging area without discarding the edited content.
 
-## Task 7 — Make another commit and inspect history
+The second `git restore` discards the remaining unstaged modification and restores the last committed version.
 
-Append a new line to `readme.txt`, then:
+## Task 7 — Make Another Commit and Inspect History
+
+Append a new line to `readme.txt`, save the file and run:
 
 ```bash
 git add readme.txt
@@ -97,11 +101,12 @@ git log
 git log --oneline
 ```
 
-`git log` displays detailed commit history; `git log --oneline` displays a compact view.
+- `git log` displays the detailed commit history.
+- `git log --oneline` displays a compact version of the commit history.
 
-## Task 8 — Revert a commit
+## Task 8 — Revert a Commit
 
-Use the hash of the commit whose changes you want to undo:
+Inspect the commit history and use the hash of the commit whose changes you want to undo.
 
 ```bash
 git log --oneline
@@ -110,13 +115,17 @@ git log --oneline
 git status
 ```
 
-Git may open an editor to confirm the revert commit message. Save and close the editor to complete the revert.
+Git may open an editor to confirm the revert commit message. Save and close the editor to complete the operation.
 
-**Important:** `git revert` creates a new commit that reverses an earlier commit. It does not delete the earlier commit from history.
+**Observation:** `git revert` creates a new commit that reverses the changes introduced by an earlier commit. It does not delete the earlier commit from the history.
 
-## Task 9 — Add and commit the Python program
+## Task 9 — Add and Commit the Python Program
 
-Copy the supplied `vecadd.py` file into this practice folder. In this assignment, the program calculates the **dot product** of two vectors.
+Copy the supplied `vecadd.py` file into the practice repository.
+
+The program calculates the **dot product** of two vectors.
+
+Run the following commands:
 
 ```bash
 python3 vecadd.py
@@ -125,7 +134,7 @@ git commit -m "Adding python file"
 git log --oneline
 ```
 
-Expected output for the supplied vectors:
+**Expected Output:**
 
 ```text
 Dot product: 32
@@ -140,11 +149,11 @@ git commit -m "Removing README file"
 git log --oneline
 ```
 
-`git rm` removes the tracked file from the working directory and stages its deletion.
+The `git rm` command removes the tracked file from the working directory and stages its deletion.
 
-## Task 11 — Check out an earlier commit
+## Task 11 — Check Out an Earlier Commit
 
-First inspect the history and copy an earlier commit hash:
+Inspect the commit history and copy the hash of an earlier commit.
 
 ```bash
 git log --oneline
@@ -153,9 +162,11 @@ git status
 ls
 ```
 
-You are now viewing the repository at that historical commit. This is usually a detached-HEAD state; you have not created a new commit just by checking it out.
+This switches the repository to the selected historical commit.
 
-## Task 12 — Return to the main branch
+**Observation:** Git usually enters a detached-HEAD state when checking out a commit directly. The repository displays the files as they existed at that particular commit.
+
+## Task 12 — Return to the Main Branch
 
 ```bash
 git checkout main
@@ -164,21 +175,21 @@ git log --oneline
 ls
 ```
 
-If your initial branch was named `master`, use `git checkout master` instead.
+If the initial branch was named `master`, use `git checkout master` instead.
 
-## Assignment 8 completion checklist
+This returns the repository to the main branch and displays its current status and commit history.
 
-- [ ] Task 1: `git init`
-- [ ] Task 2: local username and email configuration
-- [ ] Task 3: create, stage, and inspect `readme.txt`
-- [ ] Task 4: commit and verify status
-- [ ] Task 5: modify file and inspect `git diff`
-- [ ] Task 6: practise both forms of `git restore`
-- [ ] Task 7: make a commit and inspect `git log`
-- [ ] Task 8: undo a commit with `git revert`
-- [ ] Task 9: run and commit the dot-product program
-- [ ] Task 10: remove `readme.txt` with `git rm`
-- [ ] Task 11: check out an earlier commit
-- [ ] Task 12: return to `main` and verify status
+## Evidence to Keep
 
-**Evidence to keep:** screenshots of the terminal after each task, especially `git status`, `git diff`, `git log --oneline`, the revert, and the checkout/return steps.
+Capture terminal screenshots showing the execution and output of important Git commands, particularly:
+
+- `git status`
+- `git diff`
+- `git log --oneline`
+- The revert operation
+- Checking out an earlier commit
+- Returning to the main branch
+
+---
+
+*Git Basics and History | Practical 01 | Technical Writing | MNIT Jaipur*

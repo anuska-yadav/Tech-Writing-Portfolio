@@ -1,18 +1,22 @@
 # Git Practical Work
 
-This folder contains numbered practical guides and sample files for Git and GitHub.
+This folder contains numbered practical guides and sample files covering Git and GitHub concepts, commands and workflows.
 
 ## Practicals
 
-1. **01-git-basics-and-history** — Assignment 8: Git Basics, following its 12 tasks in order. Includes `readme.txt` and the `vecadd.py` dot-product program.
-2. **02-git-branching-and-stash** — Branch creation, switching, merging, conflict resolution, branch deletion, stash, and commit graph.
-3. **03-github-remote-workflow** — Remote setup, push, clone, fetch, and pull using a separate GitHub practice repository.
+1. **01-git-basics-and-history** — Covers repository initialization, Git configuration, staging, committing, inspecting changes, restoring files, reverting commits, managing files and navigating commit history. Includes `readme.txt` and the `vecadd.py` dot-product program.
 
-## How to use
+2. **02-git-branching-and-stash** — Covers branch creation, branch switching, merging, merge conflict resolution, branch deletion, Git stash and commit graph inspection.
 
-- Read each numbered Markdown guide and run the commands in order.
-- Use a separate sandbox folder on your Desktop for command execution.
-- Do not run destructive practice commands inside the main `Tech-Writing-Portfolio` repository.
-- Capture terminal screenshots as evidence of completed tasks.
+3. **03-github-remote-workflow** — Covers creating a remote GitHub repository, connecting a local repository, pushing changes, cloning repositories, fetching updates and pulling remote changes.
 
-The Assignment 8 guide follows the user's supplied 15-page assignment document. The branching and remote guides cover the related course practical topics.
+## How to Use
+
+- Read each numbered Markdown guide and execute the commands in the given order.
+- Use a separate practice repository for performing the exercises.
+- Capture terminal screenshots to document the execution and output of important commands.
+- Refer to the corresponding sample files wherever required.
+
+---
+
+*Git Practical Work | Technical Writing | MNIT Jaipur*

@@ -24,14 +24,10 @@ After studying this section, I can:
 - Explain code reviews and contribution workflows.
 - Understand GitHub Projects and Releases.
 
-## Practical Work
+## Source and Acknowledgement
 
-The `Practical` folder contains relevant practical work and demonstrations from the course.
+This documentation is based on the Technical Writing course lecture slides shared by **Dr. Neeta Nain, MNIT Jaipur**, particularly the Git lecture covering GitHub, repositories, collaboration, pull requests, releases and related topics.
 
 ---
 
 *Documentation prepared as part of the Technical Writing course.*
-
-## Source and Acknowledgement
-
-This documentation is based on the Technical Writing course lecture slides shared by **Dr. Neeta Nain, MNIT Jaipur**, particularly the Git lecture covering GitHub, repositories, collaboration, pull requests, releases and related topics.

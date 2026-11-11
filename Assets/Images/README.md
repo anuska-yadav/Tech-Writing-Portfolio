@@ -9,4 +9,4 @@ This folder contains six original educational workflow diagrams for the Technica
 - `git-workflow.png` — working directory, staging area, local repository, and remote repository
 - `github-workflow.png` — clone/pull, edit/commit, and push workflow
 
-These are explanatory diagrams, not screenshots of software or proof of completed practical work.
+
