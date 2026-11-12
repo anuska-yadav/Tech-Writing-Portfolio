@@ -2,8 +2,6 @@
 
 A structured collection of notes and practical work covering LaTeX concepts, document preparation, mathematical typesetting, formatting and bibliography management.
 
-This section is part of the Technical Writing course portfolio, prepared as per the lectures and practical assignments of **Dr. Neeta Nain, MNIT Jaipur**.
-
 ---
 
 ## Table of Contents
@@ -27,12 +25,13 @@ This section is part of the Technical Writing course portfolio, prepared as per 
 
 ## Practical Work
 
-The `Practical/` directory contains LaTeX exercises and their corresponding source files and compiled PDF outputs.
+The `Practical/` directory contains LaTeX exercises along with their corresponding source files and compiled PDF outputs.
 
-Topics include:
+The practical work covers:
 
 - Document creation and formatting
-- Lists, tables and mathematical expressions
+- Lists and tables
+- Mathematical expressions and equations
 - Colors and figures
 - Image insertion and positioning
 - Page layout and document styling
@@ -66,16 +65,9 @@ LaTeX/
 
 ## Learning Objectives
 
-- Understand the fundamentals of LaTeX.
-- Create and format structured documents.
-- Work with mathematical expressions, tables and figures.
-- Manage page layout, spacing and numbering.
-- Use citations and bibliographies.
+- Understand the fundamentals of LaTeX and its document structure.
+- Create and format structured documents using LaTeX commands and environments.
+- Work with mathematical expressions, equations, tables and figures.
+- Apply page layout, spacing, numbering and formatting techniques.
+- Manage citations and bibliographies.
 - Compile LaTeX source files into PDF documents.
-
----
-
-## Acknowledgement
-
-The documentation and practical work in this section are based on the lectures, course materials and practical assignments provided by **Dr. Neeta Nain, MNIT Jaipur**, as part of the Technical Writing course.
-

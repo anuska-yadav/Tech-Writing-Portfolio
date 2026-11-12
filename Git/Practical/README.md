@@ -1,22 +1,53 @@
 # Git Practical Work
 
-This folder contains numbered practical guides and sample files covering Git and GitHub concepts, commands and workflows.
+This directory contains numbered practical guides and sample files demonstrating Git commands, version control operations, branching and GitHub remote workflows.
+
+---
 
 ## Practicals
 
-1. **01-git-basics-and-history** — Covers repository initialization, Git configuration, staging, committing, inspecting changes, restoring files, reverting commits, managing files and navigating commit history. Includes `readme.txt` and the `vecadd.py` dot-product program.
+### 01 – Git Basics and History
 
-2. **02-git-branching-and-stash** — Covers branch creation, branch switching, merging, merge conflict resolution, branch deletion, Git stash and commit graph inspection.
+Covers repository initialization, Git configuration, staging and committing changes, inspecting repository status, restoring files, reverting commits, file management and navigating commit history.
 
-3. **03-github-remote-workflow** — Covers creating a remote GitHub repository, connecting a local repository, pushing changes, cloning repositories, fetching updates and pulling remote changes.
+**Sample Files:**
+- `readme.txt`
+- `vecadd.py` – Python program demonstrating vector dot product.
+
+### 02 – Git Branching and Stash
+
+Covers branch creation, switching between branches, merging, merge conflict resolution, branch deletion, Git stash operations and commit graph inspection.
+
+### 03 – GitHub Remote Workflow
+
+Covers creating a remote GitHub repository, connecting a local repository, pushing changes, cloning repositories, fetching updates and pulling remote changes.
+
+---
 
 ## How to Use
 
-- Read each numbered Markdown guide and execute the commands in the given order.
-- Use a separate practice repository for performing the exercises.
+- Read each numbered practical guide and execute the commands in the given order.
+- Use a separate practice repository to perform the exercises.
 - Capture terminal screenshots to document the execution and output of important commands.
 - Refer to the corresponding sample files wherever required.
 
 ---
 
-*Git Practical Work | Technical Writing | MNIT Jaipur*
+## Practical Directory Structure
+
+```text
+Practical/
+│
+├── README.md
+│
+├── 01-git-basics-and-history/
+│   ├── readme.txt
+│   ├── 01-git-basics-and-history.md
+│   └── vecadd.py
+│
+├── 02-git-branching-and-stash/
+│   └── 02-git-branching-and-stash.md
+│
+└── 03-github-remote-workflow/
+    └── 03-github-remote-workflow.md
+```

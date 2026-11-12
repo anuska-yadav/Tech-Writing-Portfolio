@@ -1,22 +1,39 @@
 # Google Docs Practical Work
 
-## 01 — Google Docs Collaboration
+This directory contains practical materials demonstrating document creation, formatting and collaboration features of Google Docs.
 
-This practical is based on the lecture's **Try It: Google Docs Collaboration** activity.
+---
 
-The matching files are:
-- `01-google-docs-collaboration.docx` — editable sample document
-- `01-google-docs-collaboration.pdf` — PDF version
-- `collaboration-workflow.png` — diagram embedded in the sample document
+## 01 – Google Docs Collaboration
 
-### Complete the live Google Docs activity
+This practical is based on the **Try It: Google Docs Collaboration** activity and demonstrates document sharing, collaborative editing and version management.
 
-The `.docx` and `.pdf` are prepared examples; they are not a live Google Doc and do not simulate sharing or version history. To complete the actual collaboration activity in Google Docs:
+### Files Included
 
-1. Upload/open the DOCX in Google Docs and create a Google Docs copy.
-2. Share it with a classmate using Edit or Suggest access.
-3. Try headings, comments, and suggestions.
-4. Add a table and embed an image or diagram.
-5. Open version history, review an earlier version, and restore a previous version.
+- `01-google-docs-collaboration.docx` – Editable sample document.
+- `01-google-docs-collaboration.pdf` – PDF version of the sample document.
+- `collaboration-workflow.png` – Diagram embedded in the sample document.
 
-The sample document provides the content and formatting starting point. The sharing, comments, suggestions and version-history actions must be performed in Google Docs with an account and collaborator.
+---
+
+## Complete the Google Docs Collaboration Activity
+
+The DOCX and PDF files are prepared examples. They provide the content and formatting starting point but are not live Google Docs documents and do not simulate sharing or version history.
+
+To complete the actual collaboration activity, perform the following steps in Google Docs:
+
+1. Upload and open the DOCX file in Google Docs.
+2. Create a Google Docs copy of the document.
+3. Share the document with a classmate using Editor or Commenter access, or Suggesting mode where appropriate.
+4. Experiment with headings, comments and suggested edits.
+5. Add a table and insert an image or diagram.
+6. Open Version History to review earlier versions.
+7. Restore a previous version to understand document version management.
+
+---
+
+## Expected Outcome
+
+Understand how Google Docs supports document creation, formatting, sharing, collaborative editing, comments, suggestions and version history.
+
+The prepared sample files provide a starting point, while the collaboration and version-management activities are performed directly in Google Docs.

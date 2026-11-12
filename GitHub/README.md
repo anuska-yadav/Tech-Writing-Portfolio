@@ -1,17 +1,36 @@
-# GitHub
+# GitHub – Repository Hosting and Collaboration
 
-This section documents the GitHub concepts covered in the Technical Writing course.
+A structured collection of documentation covering GitHub, repository creation and management, collaboration workflows, contribution practices, projects and releases.
 
-## Contents
+---
 
-| No. | Topic | Documentation |
-|---|---|---|
-| 01 | Introduction to GitHub | [Read](01-introduction-to-github.md) |
-| 02 | Creating and Managing Repositories | [Read](02-creating-and-managing-repositories.md) |
-| 03 | Collaboration and Contribution Workflow | [Read](03-collaboration-and-contribution-workflow.md) |
-| 04 | Projects, Releases and Repository Management | [Read](04-projects-releases-and-repository-management.md) |
+## Table of Contents
 
-## Learning Outcomes
+### Documentation Chapters
+
+| Chapter | Topic | Description |
+|:---:|---|---|
+| 01 | Introduction to GitHub | Introduction to GitHub, its features and its relationship with Git |
+| 02 | Creating and Managing Repositories | Repository creation, public and private repositories, README files, forks and clones |
+| 03 | Collaboration and Contribution Workflow | Issues, Pull Requests, code reviews and collaborative workflows |
+| 04 | Projects, Releases and Repository Management | GitHub Projects, Releases and repository management |
+
+---
+
+## Topics Covered
+
+- Introduction to GitHub and its relationship with Git
+- Creating and managing repositories
+- Public and private repositories
+- README files and repository documentation
+- Forking and cloning repositories
+- Issues and Pull Requests
+- Code reviews and contribution workflows
+- GitHub Projects and Releases
+
+---
+
+## Learning Objectives
 
 After studying this section, I can:
 
@@ -24,10 +43,17 @@ After studying this section, I can:
 - Explain code reviews and contribution workflows.
 - Understand GitHub Projects and Releases.
 
-## Source and Acknowledgement
-
-This documentation is based on the Technical Writing course lecture slides shared by **Dr. Neeta Nain, MNIT Jaipur**, particularly the Git lecture covering GitHub, repositories, collaboration, pull requests, releases and related topics.
-
 ---
 
-*Documentation prepared as part of the Technical Writing course.*
+## Repository Structure
+
+```text
+GitHub/
+│
+├── README.md
+│
+├── 01-introduction-to-github.md
+├── 02-creating-and-managing-repositories.md
+├── 03-collaboration-and-contribution-workflow.md
+└── 04-projects-releases-and-repository-management.md
+```

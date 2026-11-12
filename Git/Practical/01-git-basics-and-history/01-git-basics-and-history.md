@@ -1,8 +1,10 @@
-# Practical 01 — Git Basics
+# Practical 01 – Git Basics and History
 
-This practical covers fundamental Git commands and operations, including repository initialization, configuration, staging, committing, inspecting changes, restoring files, managing commit history and navigating between commits.
+This practical demonstrates fundamental Git commands and operations, including repository initialization, configuration, staging, committing, inspecting changes, restoring files, managing commit history and navigating between commits.
 
-## Task 1 — Initialize a Repository
+---
+
+## Task 1 – Initialize a Repository
 
 ```bash
 cd ~/Desktop
@@ -11,9 +13,11 @@ cd Git-Basics-Practice
 git init
 ```
 
-This initializes a new Git repository named `Git-Basics-Practice`.
+This creates a directory named `Git-Basics-Practice` and initializes it as a new Git repository.
 
-## Task 2 — Configure Git Username and Email
+---
+
+## Task 2 – Configure Git Username and Email
 
 Replace the example values with your own details:
 
@@ -24,13 +28,15 @@ git config user.name
 git config user.email
 ```
 
-These commands configure and display the Git username and email for the current repository.
+These commands configure the username and email for the current repository and display the configured values.
 
-## Task 3 — Create and Stage `readme.txt`
+---
+
+## Task 3 – Create and Stage `readme.txt`
 
 Create a file named `readme.txt` and paste the contents from the sample file supplied with this practical.
 
-Alternatively, use:
+Alternatively, create the file using:
 
 ```bash
 echo "Git Basics Practical" > readme.txt
@@ -41,7 +47,9 @@ git status
 
 **Observation:** Git reports the file under `Changes to be committed`. This means the file has been staged but not committed yet.
 
-## Task 4 — Commit the File
+---
+
+## Task 4 – Commit the File
 
 ```bash
 git commit -m "Adding first file"
@@ -50,9 +58,11 @@ git status
 
 **Observation:** The working tree should be clean because the staged changes have been committed.
 
-## Task 5 — Modify the File and Inspect the Difference
+---
 
-Add one more line to `readme.txt` using a text editor and save the file.
+## Task 5 – Modify the File and Inspect the Difference
+
+Add another line to `readme.txt` using a text editor and save the file.
 
 Run:
 
@@ -60,9 +70,11 @@ Run:
 git diff
 ```
 
-**Observation:** The added line is displayed with a `+` sign. The `git diff` command displays changes that have not yet been staged.
+**Observation:** The added line is displayed with a `+` sign. The `git diff` command displays changes in the working directory that have not yet been staged.
 
-## Task 6 — Discard Unstaged Changes
+---
+
+## Task 6 – Discard Unstaged Changes
 
 ```bash
 git restore readme.txt
@@ -70,7 +82,7 @@ cat readme.txt
 git status
 ```
 
-The uncommitted modification is discarded, and the file returns to its last committed content.
+The `git restore` command discards the unstaged modifications and restores the file to its last staged or committed content.
 
 ### Remove a File from the Staging Area
 
@@ -85,13 +97,17 @@ git restore readme.txt
 cat readme.txt
 ```
 
-`git restore --staged` removes the changes from the staging area without discarding the edited content.
+**Command Explanation:**
 
-The second `git restore` discards the remaining unstaged modification and restores the last committed version.
+- `git add readme.txt` – Stages the modified file.
+- `git restore --staged readme.txt` – Removes the changes from the staging area without discarding the edited content.
+- `git restore readme.txt` – Discards the remaining unstaged modifications and restores the last committed version.
 
-## Task 7 — Make Another Commit and Inspect History
+---
 
-Append a new line to `readme.txt`, save the file and run:
+## Task 7 – Make Another Commit and Inspect History
+
+Append a new line to `readme.txt`, save the file and execute:
 
 ```bash
 git add readme.txt
@@ -101,12 +117,16 @@ git log
 git log --oneline
 ```
 
-- `git log` displays the detailed commit history.
-- `git log --oneline` displays a compact version of the commit history.
+**Command Explanation:**
 
-## Task 8 — Revert a Commit
+- `git log` – Displays the detailed commit history.
+- `git log --oneline` – Displays a compact version of the commit history.
 
-Inspect the commit history and use the hash of the commit whose changes you want to undo.
+---
+
+## Task 8 – Revert a Commit
+
+Inspect the commit history and copy the hash of the commit whose changes you want to undo.
 
 ```bash
 git log --oneline
@@ -117,15 +137,17 @@ git status
 
 Git may open an editor to confirm the revert commit message. Save and close the editor to complete the operation.
 
-**Observation:** `git revert` creates a new commit that reverses the changes introduced by an earlier commit. It does not delete the earlier commit from the history.
+**Observation:** The `git revert` command creates a new commit that reverses the changes introduced by an earlier commit. It does not delete the earlier commit from the history.
 
-## Task 9 — Add and Commit the Python Program
+---
+
+## Task 9 – Add and Commit the Python Program
 
 Copy the supplied `vecadd.py` file into the practice repository.
 
 The program calculates the **dot product** of two vectors.
 
-Run the following commands:
+Execute:
 
 ```bash
 python3 vecadd.py
@@ -140,7 +162,9 @@ git log --oneline
 Dot product: 32
 ```
 
-## Task 10 — Remove `readme.txt`
+---
+
+## Task 10 – Remove `readme.txt`
 
 ```bash
 git rm readme.txt
@@ -151,7 +175,11 @@ git log --oneline
 
 The `git rm` command removes the tracked file from the working directory and stages its deletion.
 
-## Task 11 — Check Out an Earlier Commit
+The deletion is permanently recorded in the repository history after committing.
+
+---
+
+## Task 11 – Check Out an Earlier Commit
 
 Inspect the commit history and copy the hash of an earlier commit.
 
@@ -164,9 +192,11 @@ ls
 
 This switches the repository to the selected historical commit.
 
-**Observation:** Git usually enters a detached-HEAD state when checking out a commit directly. The repository displays the files as they existed at that particular commit.
+**Observation:** Git usually enters a detached HEAD state when checking out a commit directly. The repository displays the files as they existed at that particular point in history.
 
-## Task 12 — Return to the Main Branch
+---
+
+## Task 12 – Return to the Main Branch
 
 ```bash
 git checkout main
@@ -179,17 +209,4 @@ If the initial branch was named `master`, use `git checkout master` instead.
 
 This returns the repository to the main branch and displays its current status and commit history.
 
-## Evidence to Keep
-
-Capture terminal screenshots showing the execution and output of important Git commands, particularly:
-
-- `git status`
-- `git diff`
-- `git log --oneline`
-- The revert operation
-- Checking out an earlier commit
-- Returning to the main branch
-
 ---
-
-*Git Basics and History | Practical 01 | Technical Writing | MNIT Jaipur*

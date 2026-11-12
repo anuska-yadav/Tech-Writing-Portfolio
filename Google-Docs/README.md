@@ -1,13 +1,21 @@
 # Google Docs – Collaborative Document Creation
 
-This section covers Google Docs concepts from the Technical Writing lecture.
+A structured collection of documentation covering Google Docs features, document creation, formatting, collaboration, version history, equations, citations and document exporting.
 
-## Contents
+---
 
-1. [Introduction and Key Features](01-introduction-and-key-features.md)
-2. [Creating and Formatting Documents](02-creating-and-formatting-documents.md)
-3. [Collaboration and Version History](03-collaboration-and-version-history.md)
-4. [Equations, Citations and Exporting](04-equations-citations-and-exporting.md)
+## Table of Contents
+
+### Documentation Chapters
+
+| Chapter | Topic | Description |
+|:---:|---|---|
+| 01 | Introduction and Key Features | Introduction to Google Docs and its key features |
+| 02 | Creating and Formatting Documents | Document creation, organization and formatting |
+| 03 | Collaboration and Version History | Sharing, permissions, comments, suggestions and version history |
+| 04 | Equations, Citations and Exporting | Equations, code snippets, citations, bibliography and exporting |
+
+---
 
 ## Topics Covered
 
@@ -20,10 +28,41 @@ This section covers Google Docs concepts from the Technical Writing lecture.
 - Citations and bibliography
 - Exporting and publishing documents
 
-## Learning Outcome
+---
 
-Understanding how to create, format, share and collaboratively manage documents using Google Docs.
+## Practical Work
 
-## Source and Acknowledgement
+The `Practical/` directory contains practical exercises and related files demonstrating the use of Google Docs features.
 
-This documentation is based on the Google Docs lecture slides and practical activities shared by **Dr. Neeta Nain, MNIT Jaipur**.
+The practical work focuses on document creation, formatting, collaboration and other document management activities.
+
+---
+
+## Repository Structure
+
+```text
+Google-Docs/
+│
+├── README.md
+│
+├── 01-introduction-and-key-features.md
+├── 02-creating-and-formatting-documents.md
+├── 03-collaboration-and-version-history.md
+├── 04-equations-citations-and-exporting.md
+│
+└── Practical/
+    ├── README.md
+    └── Practical files and supporting materials
+```
+
+---
+
+## Learning Objectives
+
+- Understand Google Docs and its key features.
+- Create and format structured documents.
+- Use paragraph styles, tables, images and other formatting tools.
+- Collaborate through sharing, comments and suggestions.
+- Manage document versions and editing history.
+- Insert equations, citations and bibliographies.
+- Export and publish documents in different formats.

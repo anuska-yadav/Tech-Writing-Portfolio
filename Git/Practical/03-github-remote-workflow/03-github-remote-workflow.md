@@ -1,6 +1,8 @@
-# Practical 03 — GitHub Remote Workflow
+# Practical 03 – GitHub Remote Workflow
 
-This practical covers GitHub remote repository management, connecting a local repository to GitHub, cloning repositories, fetching and pulling remote changes, and pushing subsequent commits.
+This practical demonstrates how to work with remote GitHub repositories, connect a local repository to GitHub, clone repositories, fetch and pull remote changes, and push subsequent commits.
+
+---
 
 ## 1. Create a GitHub Repository
 
@@ -12,9 +14,11 @@ Leave the following repository initialization options unchecked so that the remo
 - Add `.gitignore`
 - Choose a license
 
+---
+
 ## 2. Connect a Local Practice Repository
 
-Run the following commands from the local practice repository you intend to publish:
+Run the following commands from the local practice repository you want to publish:
 
 ```bash
 git remote add origin https://github.com/YOUR-USERNAME/TW-Git-Practical.git
@@ -25,23 +29,29 @@ git push -u origin main
 
 Replace `YOUR-USERNAME` with your GitHub username.
 
-- `git remote add origin` connects the local repository to the remote GitHub repository.
-- `git remote -v` displays the configured remote repository URLs.
-- `git branch -M main` renames the current branch to `main`.
-- `git push -u origin main` pushes the local `main` branch to GitHub and establishes upstream tracking.
+**Command Explanation:**
+
+- `git remote add origin` – Connects the local repository to the remote GitHub repository.
+- `git remote -v` – Displays the configured remote repository URLs.
+- `git branch -M main` – Renames the current branch to `main`.
+- `git push -u origin main` – Pushes the local `main` branch to GitHub and establishes upstream tracking.
+
+---
 
 ## 3. Clone a Repository
 
-To create a separate local copy of the remote repository:
+To create a separate local copy of the remote repository, execute:
 
 ```bash
 cd ~/Desktop
 git clone https://github.com/YOUR-USERNAME/TW-Git-Practical.git
 ```
 
-The `git clone` command downloads the repository and creates a local copy containing its files and commit history.
+The `git clone` command downloads the remote repository and creates a local copy containing its files and commit history.
 
-## 4. Fetch and Pull
+---
+
+## 4. Fetch and Pull Remote Changes
 
 Inside the cloned repository, execute:
 
@@ -50,8 +60,12 @@ git fetch origin
 git pull origin main
 ```
 
-- `git fetch` downloads updates from the remote repository without merging them into the current branch.
-- `git pull` fetches and integrates remote updates into the current branch.
+**Command Explanation:**
+
+- `git fetch origin` – Downloads updates from the remote repository without integrating them into the current branch.
+- `git pull origin main` – Fetches and integrates changes from the remote `main` branch into the current branch.
+
+---
 
 ## 5. Push a Later Commit
 
@@ -64,8 +78,15 @@ git commit -m "Update practical files"
 git push
 ```
 
-These commands display the repository status, stage the changes, create a new commit and push the commit to the remote GitHub repository.
+**Command Explanation:**
+
+- `git status` – Displays the current state of the working directory and staging area.
+- `git add .` – Stages the modified and new files.
+- `git commit -m` – Creates a new commit with the specified message.
+- `git push` – Uploads the committed changes to the remote repository.
 
 ---
 
-*GitHub Remote Workflow | Practical 03 | Technical Writing | MNIT Jaipur*
+## Outcome
+
+Successfully connected a local Git repository to GitHub, cloned a remote repository, fetched and pulled remote updates, and pushed subsequent commits.
