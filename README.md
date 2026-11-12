@@ -22,29 +22,74 @@ The objective is to understand the concepts, document the learning clearly and m
 ## Repository Structure
 
 ```text
-technical-writing-portfolio/
+
+Tech-Writing-Portfolio/
+│
 ├── README.md
+├── .gitignore
+│
 ├── LaTeX/
-│   ├── README.md
-│   └── Practical/
+│   ├── Practical/
+│   ├── 01-introduction-and-basics.md
+│   ├── 02-commands-formatting-and-environments.md
+│   ├── 03-document-layout-and-page-styles.md
+│   ├── 04-advanced-document-styling.md
+│   ├── 05-paragraphs-page-breaks-and-numbering.md
+│   ├── 06-spacing-boxes-and-layout.md
+│   ├── 07-custom-environments-errors-and-bibtex.md
+│   ├── 08-mathematical-typesetting.md
+│   ├── 09-colors-figures-and-picture-environment.md
+│   ├── 10-citations-and-bibliography-workflow.md
+│   └── README.md
+│
 ├── Beamer/
-│   ├── README.md
-│   └── Practical/
+│   ├── Practical/
+│   ├── 01-introduction-and-basic-structure.md
+│   └── README.md
+│
 ├── Doxygen/
-│   ├── README.md
-│   └── Practical/
+│   ├── Practical/
+│   ├── 01-introduction-and-key-features.md
+│   ├── 02-installation-and-basic-workflow.md
+│   ├── 03-comment-syntax-and-documentation-tags.md
+│   ├── 04-documenting-project-elements.md
+│   ├── 05-configuration-and-output.md
+│   └── README.md
+│
 ├── Google-Docs/
-│   ├── README.md
-│   └── Practical/
+│   ├── Practical/
+│   ├── 01-introduction-and-key-features.md
+│   ├── 02-creating-and-formatting-documents.md
+│   ├── 03-collaboration-and-version-history.md
+│   ├── 04-equations-citations-and-exporting.md
+│   └── README.md
+│
 ├── Git/
-│   ├── README.md
-│   └── Practical/
+│   ├── Practical/
+│   ├── 01-introduction-to-version-control.md
+│   ├── 02-installation-configuration-and-repositories.md
+│   ├── 03-three-areas-and-basic-workflow.md
+│   ├── 04-status-tracking-and-staging.md
+│   ├── 05-ignoring-renaming-removing-and-restoring.md
+│   ├── 06-commit-history-and-comparison.md
+│   ├── 07-github-and-remote-repositories.md
+│   ├── 08-branching-and-branch-management.md
+│   ├── 09-github-collaboration-and-pull-requests.md
+│   ├── 10-tags-releases-rebase-and-best-practices.md
+│   ├── 11-git-command-reference.md
+│   └── README.md
+│
 ├── GitHub/
-│   ├── README.md
-│   └── Practical/
+│   ├── 01-introduction-to-github.md
+│   ├── 02-creating-and-managing-repositories.md
+│   ├── 03-collaboration-and-contribution-workflow.md
+│   ├── 04-projects-releases-and-repository-management.md
+│   └── README.md
+│
 └── Assets/
     ├── Images/
-    └── Screenshots/
+    ├── Screenshots/
+    └── README.md
 ```
 
 ## Learning Outcomes
