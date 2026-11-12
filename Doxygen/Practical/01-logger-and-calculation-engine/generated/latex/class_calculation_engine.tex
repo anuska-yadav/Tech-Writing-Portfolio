@@ -1,0 +1,92 @@
+\doxysection{Calculation\+Engine Class Reference}
+\hypertarget{class_calculation_engine}{}\label{class_calculation_engine}\index{CalculationEngine@{CalculationEngine}}
+
+
+Performs basic mathematical calculations.  
+
+
+
+
+{\ttfamily \+\#include $<$Calculation\+Engine.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_calculation_engine_a5dd2e4127b884643239e4802900dd529}{Calculation\+Engine}} (const \doxymbox{\hyperlink{class_logger}{Logger}} \&logger)
+\begin{DoxyCompactList}\small\item\em Creates a calculation engine. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{class_calculation_engine_a19d4dd01a764735328b503a531be8ce0}{power}} (double base, int exponent) const
+\begin{DoxyCompactList}\small\item\em Calculates a base raised to an exponent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \doxymbox{\hyperlink{class_logger}{Logger}} \& \doxymbox{\hyperlink{class_calculation_engine_a85db98e979c66eda70b9ef2162c39998}{logger}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Performs basic mathematical calculations. 
+
+The class uses a \doxylink{class_logger}{Logger} object to report calculation activity. 
+
+\label{class_calculation_engine_doc-constructors}
+\Hypertarget{class_calculation_engine_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_calculation_engine_a5dd2e4127b884643239e4802900dd529}\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\index{CalculationEngine@{CalculationEngine}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{CalculationEngine()}{CalculationEngine()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a5dd2e4127b884643239e4802900dd529} 
+Calculation\+Engine::\+\+Calculation\+Engine (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_logger}{Logger}} \&}]{logger}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Creates a calculation engine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em logger} & \doxylink{class_logger}{Logger} used to report operations. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_calculation_engine_doc-func-members}
+\Hypertarget{class_calculation_engine_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_calculation_engine_a19d4dd01a764735328b503a531be8ce0}\index{CalculationEngine@{CalculationEngine}!power@{power}}
+\index{power@{power}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{power()}{power()}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a19d4dd01a764735328b503a531be8ce0} 
+double Calculation\+Engine::\+power (\begin{DoxyParamCaption}\item[{double}]{base}{, }\item[{int}]{exponent}{}\end{DoxyParamCaption}) const}
+
+
+
+Calculates a base raised to an exponent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base} & The number to be raised to a power. \\
+\hline
+{\em exponent} & The exponent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated power.
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\doxymbox{\hyperlink{todo__todo000001}{Todo}}]Add validation for unsupported numeric input. \end{DoxyRefDesc}
+
+
+\label{class_calculation_engine_doc-variable-members}
+\Hypertarget{class_calculation_engine_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_calculation_engine_a85db98e979c66eda70b9ef2162c39998}\index{CalculationEngine@{CalculationEngine}!logger@{logger}}
+\index{logger@{logger}!CalculationEngine@{CalculationEngine}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{class_calculation_engine_a85db98e979c66eda70b9ef2162c39998} 
+const \doxymbox{\hyperlink{class_logger}{Logger}}\& Calculation\+Engine::\+logger\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_calculation_engine_8h}{Calculation\+Engine.\+h}}\item 
+\doxymbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

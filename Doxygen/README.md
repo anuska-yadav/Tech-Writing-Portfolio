@@ -28,6 +28,7 @@ A structured collection of documentation covering Doxygen, source code documenta
 - Documenting multi-file projects
 - Doxyfile configuration
 - Generating HTML documentation
+- Generating PDF documentation using LaTeX
 
 ---
 
@@ -35,7 +36,7 @@ A structured collection of documentation covering Doxygen, source code documenta
 
 The `Practical/` directory contains the Doxygen lab assignment and related project files.
 
-The practical work involved documenting a multi-file C++ Student Result Management project using specially formatted comments and generating HTML documentation.
+The practical work involved documenting a multi-file C++ Student Result Management project using specially formatted comments and generating HTML and PDF documentation.
 
 It includes:
 
@@ -43,7 +44,9 @@ It includes:
 - Adding descriptions for classes, functions and other project elements.
 - Configuring Doxygen using the Doxyfile.
 - Generating HTML documentation.
-- Exploring the generated HTML documentation.
+- Generating LaTeX output for PDF documentation.
+- Compiling LaTeX output to generate the PDF.
+- Exploring the generated HTML and PDF documentation.
 
 ---
 
@@ -62,7 +65,7 @@ Doxygen/
 │
 └── Practical/
     ├── README.md
-    └── Practical project files and generated HTML documentation
+    └── Practical project files and generated HTML/PDF documentation
 ```
 
 ---
@@ -78,4 +81,5 @@ After studying this section, I can:
 - Document classes, functions, variables and other project elements.
 - Configure documentation generation using a Doxyfile.
 - Generate HTML documentation.
+- Generate PDF documentation using LaTeX.
 - Understand and navigate generated reference documentation.

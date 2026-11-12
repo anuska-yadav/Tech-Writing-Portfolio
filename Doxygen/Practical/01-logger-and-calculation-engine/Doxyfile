@@ -6,7 +6,7 @@ OUTPUT_DIRECTORY       = generated
 
 INPUT                  = main.cpp Logger.h CalculationEngine.h
 FILE_PATTERNS          = *.cpp *.h
-RECURSIVE              = NO
+RECURSIVE              = YES
 EXTRACT_ALL            = YES
 EXTRACT_PRIVATE        = YES
 EXTRACT_STATIC         = YES
@@ -20,7 +20,7 @@ GENERATE_TREEVIEW      = YES
 DISABLE_INDEX          = NO
 SEARCHENGINE            = YES
 
-GENERATE_LATEX         = NO
+GENERATE_LATEX         = YES
 LATEX_OUTPUT           = latex
 USE_PDFLATEX           = YES
 

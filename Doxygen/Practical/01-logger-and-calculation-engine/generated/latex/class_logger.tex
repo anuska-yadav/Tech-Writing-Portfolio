@@ -1,0 +1,137 @@
+\doxysection{Logger Class Reference}
+\hypertarget{class_logger}{}\label{class_logger}\index{Logger@{Logger}}
+
+
+Provides simple application logging.  
+
+
+
+
+{\ttfamily \+\#include $<$Logger.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Log\+Level}} \{ \doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36abdc8d840ac4b73e1bd3212184af8f85e}{DEBUG}}
+, \doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36a61a9b6fc1e9babc448984b8a34ca2ed2}{INFO}}
+, \doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36afb1bf96f41b282521d9438106ea11bca}{WARNING}}
+, \doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36a3ce1bbeb15a3d8e29e4c5e75492a781b}{ERROR}}
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the severity of a log message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_logger_ac88d2cefce6546320c714a2a5a2cdc8f}{Logger}} (\doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Log\+Level}} level=\doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36a61a9b6fc1e9babc448984b8a34ca2ed2}{INFO}})
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_logger}{Logger}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_logger_a69e0ad641e65f6a53c4ea9f450c04653}{log}} (\doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Log\+Level}} level, const char \texorpdfstring{$\ast$}{*}message) const
+\begin{DoxyCompactList}\small\item\em Writes a message to the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Log\+Level}} \doxymbox{\hyperlink{class_logger_a959a134060b6d2a123d8c08f8b3b339d}{minimum\+Level}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides simple application logging. 
+
+The \doxylink{class_logger}{Logger} class writes messages with an associated log level. 
+
+\label{class_logger_doc-enum-members}
+\Hypertarget{class_logger_doc-enum-members}
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_logger_ac744681e23720966b5f430ec2060da36}\index{Logger@{Logger}!LogLevel@{LogLevel}}
+\index{LogLevel@{LogLevel}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{LogLevel}{LogLevel}}
+{\footnotesize\ttfamily \label{class_logger_ac744681e23720966b5f430ec2060da36} 
+enum \doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Logger::\+\+Log\+Level}}}
+
+
+
+Represents the severity of a log message. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEBUG@{DEBUG}!Logger@{Logger}}
+\index{Logger@{Logger}!DEBUG@{DEBUG}}
+}\Hypertarget{class_logger_ac744681e23720966b5f430ec2060da36abdc8d840ac4b73e1bd3212184af8f85e}\label{class_logger_ac744681e23720966b5f430ec2060da36abdc8d840ac4b73e1bd3212184af8f85e} 
+DEBUG&Detailed diagnostic information. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INFO@{INFO}!Logger@{Logger}}
+\index{Logger@{Logger}!INFO@{INFO}}
+}\Hypertarget{class_logger_ac744681e23720966b5f430ec2060da36a61a9b6fc1e9babc448984b8a34ca2ed2}\label{class_logger_ac744681e23720966b5f430ec2060da36a61a9b6fc1e9babc448984b8a34ca2ed2} 
+INFO&General information about program execution. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WARNING@{WARNING}!Logger@{Logger}}
+\index{Logger@{Logger}!WARNING@{WARNING}}
+}\Hypertarget{class_logger_ac744681e23720966b5f430ec2060da36afb1bf96f41b282521d9438106ea11bca}\label{class_logger_ac744681e23720966b5f430ec2060da36afb1bf96f41b282521d9438106ea11bca} 
+WARNING&A condition that may require attention. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR@{ERROR}!Logger@{Logger}}
+\index{Logger@{Logger}!ERROR@{ERROR}}
+}\Hypertarget{class_logger_ac744681e23720966b5f430ec2060da36a3ce1bbeb15a3d8e29e4c5e75492a781b}\label{class_logger_ac744681e23720966b5f430ec2060da36a3ce1bbeb15a3d8e29e4c5e75492a781b} 
+ERROR&An operation failed or encountered an error. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\label{class_logger_doc-constructors}
+\Hypertarget{class_logger_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_logger_ac88d2cefce6546320c714a2a5a2cdc8f}\index{Logger@{Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily \label{class_logger_ac88d2cefce6546320c714a2a5a2cdc8f} 
+Logger::\+\+Logger (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Log\+Level}}}]{level}{ = {\ttfamily \doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36a61a9b6fc1e9babc448984b8a34ca2ed2}{INFO}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Constructs a \doxylink{class_logger}{Logger}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Minimum log level to display. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_logger_doc-func-members}
+\Hypertarget{class_logger_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_logger_a69e0ad641e65f6a53c4ea9f450c04653}\index{Logger@{Logger}!log@{log}}
+\index{log@{log}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_logger_a69e0ad641e65f6a53c4ea9f450c04653} 
+void Logger::\+log (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Log\+Level}}}]{level}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{message}{}\end{DoxyParamCaption}) const}
+
+
+
+Writes a message to the console. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Severity of the message. \\
+\hline
+{\em message} & Text to be logged. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_logger_doc-variable-members}
+\Hypertarget{class_logger_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_logger_a959a134060b6d2a123d8c08f8b3b339d}\index{Logger@{Logger}!minimumLevel@{minimumLevel}}
+\index{minimumLevel@{minimumLevel}!Logger@{Logger}}
+\doxysubsubsection{\texorpdfstring{minimumLevel}{minimumLevel}}
+{\footnotesize\ttfamily \label{class_logger_a959a134060b6d2a123d8c08f8b3b339d} 
+\doxymbox{\hyperlink{class_logger_ac744681e23720966b5f430ec2060da36}{Log\+Level}} Logger::\+minimum\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{_logger_8h}{Logger.\+h}}\item 
+\doxymbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}
