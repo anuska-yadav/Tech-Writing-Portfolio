@@ -1,6 +1,6 @@
-# Git and Version Control
+# Git and GitHub
 
-A structured collection of documentation covering version control concepts, Git commands, repository management, branching, collaboration and version history.
+A structured collection of documentation covering version control concepts, Git commands, repository management, GitHub, branching, collaboration and version history.
 
 ---
 
@@ -35,17 +35,20 @@ A structured collection of documentation covering version control concepts, Git 
 - Comparing, renaming, removing and restoring files
 - `.gitignore` and ignored files
 - Local and remote repositories
+- GitHub repositories and remote management
 - Cloning, pushing, pulling and fetching
 - Branch creation, switching and merging
 - Merge conflicts and their resolution
 - GitHub collaboration and Pull Requests
-- Tags, releases and rebasing
+- Code review and collaboration practices
+- Git tags, releases and rebasing
+- Authentication and repository security
 
 ---
 
 ## Practical Work
 
-The `Practical/` directory contains practical exercises and demonstrations related to Git commands and version control workflows covered in the course.
+The `Practical/` directory contains practical exercises and demonstrations related to Git commands, GitHub operations and version control workflows covered in the course.
 
 The practical work focuses on:
 
@@ -54,6 +57,7 @@ The practical work focuses on:
 - Inspecting repository status and history
 - Managing files and ignored files
 - Connecting local repositories to GitHub
+- Cloning and managing remote repositories
 - Working with branches and merging changes
 - Practising Git commands and collaboration workflows
 
@@ -62,7 +66,7 @@ The practical work focuses on:
 ## Repository Structure
 
 ```text
-Git/
+Git-and-GitHub/
 │
 ├── README.md
 │
@@ -98,5 +102,7 @@ After studying this section, I can:
 - Push, pull, fetch and clone repositories.
 - Create, switch, merge and delete branches.
 - Understand merge conflicts and their resolution.
-- Explain GitHub collaboration features.
-- Use tags, releases and rebase.
+- Explain GitHub collaboration features and Pull Requests.
+- Understand code review and collaborative workflows.
+- Explain tags, releases and rebasing.
+- Understand basic authentication and repository security.

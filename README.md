@@ -4,7 +4,7 @@ A documentation portfolio presenting the concepts, tools, techniques and practic
 
 ## About This Portfolio
 
-This repository brings together my learning and practical work in Technical Writing. It contains organized documentation, explanations, examples and relevant practical work covering six major areas.
+This repository brings together my learning and practical work in Technical Writing. It contains organized documentation, explanations, examples and relevant practical work covering five major subject areas, along with Git and GitHub as a combined topic.
 
 The objective is to understand the concepts, document the learning clearly and maintain the work using Git and GitHub.
 
@@ -16,13 +16,11 @@ The objective is to understand the concepts, document the learning clearly and m
 | 02 | Beamer | Creating structured presentations using LaTeX Beamer. | [Explore Beamer](Beamer/README.md) |
 | 03 | Doxygen | Generating software documentation from source-code comments. | [Explore Doxygen](Doxygen/README.md) |
 | 04 | Google Docs | Document creation, formatting and collaborative features. | [Explore Google Docs](Google-Docs/README.md) |
-| 05 | Git | Version control concepts, repository management and Git commands. | [Explore Git](Git/README.md) |
-| 06 | GitHub | Repository hosting, management and collaboration. | [Explore GitHub](GitHub/README.md) |
+| 05 | Git and GitHub | Version control, repository management, Git commands, GitHub hosting and collaboration workflows. | [Explore Git and GitHub](Git-and-GitHub/README.md) |
 
 ## Repository Structure
 
 ```text
-
 Tech-Writing-Portfolio/
 │
 ├── README.md
@@ -64,7 +62,7 @@ Tech-Writing-Portfolio/
 │   ├── 04-equations-citations-and-exporting.md
 │   └── README.md
 │
-├── Git/
+├── Git-and-GitHub/
 │   ├── Practical/
 │   ├── 01-introduction-to-version-control.md
 │   ├── 02-installation-configuration-and-repositories.md
@@ -77,13 +75,6 @@ Tech-Writing-Portfolio/
 │   ├── 09-github-collaboration-and-pull-requests.md
 │   ├── 10-tags-releases-rebase-and-best-practices.md
 │   ├── 11-git-command-reference.md
-│   └── README.md
-│
-├── GitHub/
-│   ├── 01-introduction-to-github.md
-│   ├── 02-creating-and-managing-repositories.md
-│   ├── 03-collaboration-and-contribution-workflow.md
-│   ├── 04-projects-releases-and-repository-management.md
 │   └── README.md
 │
 └── Assets/
@@ -100,8 +91,10 @@ Through this course, I have explored:
 - Preparing presentations using Beamer.
 - Documenting source code using Doxygen.
 - Creating and collaborating on documents using Google Docs.
-- Tracking project changes using Git.
+- Understanding version control and tracking project changes using Git.
+- Managing repositories and remote connections.
 - Hosting repositories and collaborating through GitHub.
+- Working with branches, Pull Requests, code reviews and repository management.
 
 ## Source and Acknowledgement
 
